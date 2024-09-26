@@ -3,30 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/index.css" />
     <title>Vanilla BOM</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <form>
-        <input
-          type="search"
-          placeholder="Enter a city.."
-          required
-          class="search-input"
-        />
-        <input type="submit" value="Search" class="search-button" />
-      </form>
-    </header>
-    <main>
-      <h1>Paris</h1>
-      <p>Saturday 15:32, moderate rain</br>
-    Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong></p>
-    <div class="current-temeprature">
-        <div id="icon">🌤</div>
-        <div class="current-temeprature-value">24</div>
-        <div class="current-temeprature-unit">°C</div>
+    <div class="weather-app">
+      <header>
+        <form>
+          <input
+            type="search"
+            placeholder="Enter a city.."
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
+        </form>
+      </header>
+      <main>
+        <div class="weather-app-data">
+          <div>
+            <h1 class="weather-app-city" id="city">Paris</h1>
+            <p class="weather-app-details">
+              <span id="time">15:32</span>, <span id="description">rain</span
+              ><br />
+              Humidity: <strong id="humidity">87%</strong>, Wind:
+              <strong id="wind-speed">7.2km/h</strong>
+            </p>
+          </div>
+          <div class="current-temperature">
+            <div class="current-icon" id="icon">🌤</div>
+            <div class="current-temperature-value">24</div>
+            <div class="current-temperature-unit">°C</div>
+          </div>
+        </div>
+      </main>
+      <footer>
+        This project was coded by
+        <a href="https://www.tamilynng.com/" target="_blank">Tamilyn Ng</a> and
+        is
+        <a href="https://github.com/tamilynnjy/vanilla-BOM" target="_blank"
+          >open-sourced on Github</a
+        >
+        and <a href="" target="_blank">hosted on Netlify</a>
+      </footer>
     </div>
-    </main>
-    <footer>This project was coded by <a href="https://www.tamilynng.com/" target="_blank">Tamilyn Ng</a> and is <a href="https://github.com/tamilynnjy/vanilla-BOM" target="_blank">open-sourced on Github</a> and <a href="" target="_blank">hosted on Netlify</a></footer>
   </body>
 </html>
