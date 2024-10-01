@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/index.css" />
+    <script src="https://unpkg.com/axios@1.6.7/dist/axios.min.js"></script>
     <title>Vanilla BOM</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -30,15 +31,14 @@
           <div>
             <h1 class="weather-app-city" id="city">Paris</h1>
             <p class="weather-app-details">
-              <span id="time">15:32</span>, <span id="description">rain</span
-              ><br />
-              Humidity: <strong id="humidity">87%</strong>, Wind:
-              <strong id="wind-speed">7.2km/h</strong>
+              <span id="time"></span>, <span id="description"></span><br />
+              Humidity: <strong id="humidity"></strong>, Wind:
+              <strong id="wind-speed"></strong>
             </p>
           </div>
           <div class="current-temperature">
-            <div class="current-icon" id="icon">🌤</div>
-            <div class="current-temperature-value">24</div>
+            <div id="icon"></div>
+            <div class="current-temperature-value"></div>
             <div class="current-temperature-unit">°C</div>
           </div>
         </div>
@@ -53,5 +53,6 @@
         and <a href="" target="_blank">hosted on Netlify</a>
       </footer>
     </div>
+    <script src="src/index.js"></script>
   </body>
 </html>
